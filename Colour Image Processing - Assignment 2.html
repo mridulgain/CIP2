@@ -1,0 +1,48 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Colour Image Processing - Assignment 2</title>
+  </head>
+  <body>
+    <center>
+      <h2>ASSIGNMENT - II</h2>
+      <hr>
+      <b>Due Date: 12 April 2019</b>
+      <p>Test Images:<br><a href="https://scis.uohyd.ac.in/~chakcs/CIP2018/waterplane.ppm" target="_blank">waterplane</a><br>
+      <a href="https://scis.uohyd.ac.in/~chakcs/CIP2018/orange-flower.ppm" target="_blank">orange-flower</a><br>
+      <a href="https://scis.uohyd.ac.in/~chakcs/CIP2018/ed-eg.png" target="_blank">error-diffusion test</a><br>
+      <a href="https://scis.uohyd.ac.in/~chakcs/CIP2018/fall-colours.jpg" target="_blank">fall colours</a></p>
+      <hr>
+    </center>
+    <ol>
+      <li><b>(6 Marks)</b> Search the web for <em>Colour Halftoning
+	  algorithms</em>. Select one of them and write a detailed
+	  report on it <b>OR</b> implement the selected algorithm and
+	  show results on the test images.</li>
+      <li><b>(6 Marks)</b> Try coming up with your own <em>error
+	  diffusion coefficients</em> and implement the standard
+	  error-diffusion algorithm. Compare the performance of your
+	  coefficients against Floyd-Steinberg's on <a href="https://scis.uohyd.ac.in/~chakcs/CIP2018/ed-eg.png" target="_blank">this
+	  image</a>. Discuss the patterns visible in yours and in
+	  Floyd-Steinberg's at the various gray levels.</li>
+      <li><b>(4 + 4 Marks)</b>
+	<ul>
+	  <li>Implement an algorithm to simulate the grayscale output
+	    from a colour filter array. The function prototype is
+	    <center><font color="#008032"><tt>image colour_filter
+		  (image, filter)</tt></font></center>
+	    That is, it takes an input colour image and a colour
+	    filter as parameters and returns a grayscale image.</li>
+	  <li>Implement a demosaicking algorithm with the prototype
+	    <center><font color="#008032"><tt>image demosaic (image,
+		  filter)</tt></font></center>
+	    The input image is a grayscale image output by
+	    the <font color="#008032"><tt>colour_filter</tt></font>
+	    algorithm and the corresponding filter array; the output
+	    is a colour image.</li>
+	</ul>
+      </li>
+    </ol>
+    <hr>
+  
+
+</body></html>
