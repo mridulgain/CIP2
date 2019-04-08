@@ -36,3 +36,5 @@ if __name__ == "__main__":
     except IndexError:
         print("error : please provide file name as command line argument")
         print("try : python", sys.argv[0], "<image_file_name>")
+    except cv2.error:
+        print("Invalid image file")

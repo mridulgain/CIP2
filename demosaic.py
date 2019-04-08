@@ -37,7 +37,6 @@ def demosaic(img, filter):
 if __name__=="__main__":
     try:
         img = cv2.imread(sys.argv[1], 0)#reading grayscale
-        print(img.shape)
         bayer_filter = [#considering bgr image
             [2, 1],#R=2 G=1
             [1, 0]  #G=1 B=0
@@ -50,3 +49,5 @@ if __name__=="__main__":
     except IndexError:
         print("error : please provide file name as command line argument")
         print("try : python", sys.argv[0], "<image_file_name>")
+    except cv2.error:
+        print("Invalid image file")
